@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="org.bueno.jose.kindlr.MainActivity"
+    android:background="@drawable/rect_gradient_main_goodreads">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="v. 4.1.2015"
+        android:id="@+id/version"
+        android:textStyle="bold"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="kin"
+            android:id="@+id/kin"
+            android:textColor="#3D2C19"
+            android:textSize="64dp"
+            android:typeface="monospace"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="dlr"
+            android:id="@+id/dlr"
+            android:textColor="#3D2C19"
+            android:textSize="64dp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/kin"
+            android:layout_toEndOf="@+id/kin" />
+    </LinearLayout>
+</RelativeLayout>
